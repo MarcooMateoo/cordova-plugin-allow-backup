@@ -11,8 +11,8 @@
   </engines>
   <preference name="BACKUP" default="false"/>
   <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <application android:allowBackup="$BACKUP"/>
+    <edit-config file="AndroidManifest.xml" target="/manifest/application/activity" mode="merge">
+      <application android:exported="false"/>
     </edit-config>
   </platform>
 </plugin>
